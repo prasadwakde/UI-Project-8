@@ -1,107 +1,118 @@
-.main-div{
-    margin: 10px 50px;
+.main-div {
+  margin: 10px 50px;
 }
-nav{
-    display: flex;
-    /* z-index:-1; */
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    margin: 5px 50px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 5px 50px;
 }
-.nav-items{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 40px;
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
 }
-.nav-item{
-    font-family: Roboto;
-    color: #561f9d;
-    font-weight: 800;
-    font-size: 15px;
+.nav-item {
+  font-family: Roboto;
+  color: #561f9d;
+  font-weight: 800;
+  font-size: 15px;
 }
-.signin-btn{
-    background: linear-gradient(to right, #8e6bce, #d2a4d2);
-    color: #fff;
-    padding: 5px 20px;
-    border-radius: 15px;
-    border: none;
-}
-
-/* .intro-section{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-} */
-.left-section{
-    width: 45%;
-    /* margin-left: 30px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 10px;
-    /* background-color: grey; */
-    margin-top: 80px;
-}
-.left-section h1{
-    font-size: 80px;
-    font-family: Roboto;
-    color: #4f1d8f;
-    font-weight: 800;
-}
-.left-section h4{
-
-    line-height: 25px;
-    text-align: left;
-    opacity: 0.5;
-    color: #561f9d;
-}
-.learn-more-btn{
-    margin-top: 40px;
-    font-size: 20px;
-    color: #fff;
-    align-items: flex-end;
-    padding: 8px 25px;
-    border-radius: 25px;
-    border: none;
-    background: linear-gradient(to right, #8e6bce, #d2a4d2);
+.signin-btn {
+  background: linear-gradient(to right, #8e6bce, #d2a4d2);
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  border: none;
 }
 
-.imgs-div{
-    position: absolute;
-    /* margin-top: -50px; */
-    /* width: 800px; */
-    background: linear-gradient(to right, #bd87c5, #ddbcdd);
-    z-index: -1;
-    right: -200px;
-    top: -500px;
-    transform: rotate(-20deg);
-    border-radius: 250px;
-    border: none;
-    /* transform: translate(12px, 50%); */
-    /* opacity: 0.4; */
+.left-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 80px;
 }
-img[alt="intro-img"]{
-    position: relative;
-    margin-top: 150px;
-    padding-top: 450px;
-    padding-right: 450px;
-    width: 600px;
-    height: auto;
-    transform: rotate(20deg);
+.left-section h1 {
+  font-size: 80px;
+  font-family: Roboto;
+  color: #4f1d8f;
+  font-weight: 800;
 }
-.vector-img{
-    position: absolute;
-    top: 800px;
-    left: -200px;
-    transform: rotate(20deg);
+.left-section h4 {
+  line-height: 25px;
+  text-align: left;
+  opacity: 0.5;
+  color: #561f9d;
 }
-.vector-dot{
-    /* font-size: 10px; */
-    position: absolute;
-    top: 820px;
-    left: -135px;
-    transform: rotate(20deg);
+.learn-more-btn {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #fff;
+  align-items: flex-end;
+  padding: 8px 25px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(to right, #8e6bce, #d2a4d2);
+}
+
+.imgs-div {
+  position: absolute;
+  background: linear-gradient(to right, #bd87c5, #ddbcdd);
+  z-index: -1;
+  right: -200px;
+  top: -500px;
+  transform: rotate(-20deg);
+  border-radius: 250px;
+  border: none;
+}
+img[alt="intro-img"] {
+  position: relative;
+  margin-top: 150px;
+  padding-top: 450px;
+  padding-right: 450px;
+  width: 600px;
+  height: auto;
+  transform: rotate(20deg);
+}
+.vector-img {
+  position: absolute;
+  top: 800px;
+  left: -200px;
+  transform: rotate(20deg);
+}
+.vector-dot {
+  position: absolute;
+  top: 820px;
+  left: -135px;
+  transform: rotate(20deg);
+}
+
+@media screen and (max-width: 867px) {
+  .nav-items {
+    display: none;
+  }
+
+  .left-section {
+    margin-top: 700px;
+    margin-left: 100px;
+  }
+  .left-section h1 {
+    font-size: 70px;
+  }
+  .learn-more-btn {
+    margin-top: 20px;
+  }
+  .imgs-div {
+    left: -70px;
+    top: -450px;
+  }
+  .vector-img,
+  .vector-dot {
+    display: none;
+  }
 }
